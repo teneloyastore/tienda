@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda | Productos Estrella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Onda<span>Store</span></a>
+            <nav>
+                <ul class="nav-links" id="category-nav">
+                    <!-- Categorías generadas por JS -->
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container hero-container">
+                <h1>Descubrí nuestros <br><span class="text-gradient">productos destacados</span></h1>
+                <p>La mejor selección de artículos con compra 100% segura a través de Mercado Libre.</p>
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <input type="text" id="search-input" placeholder="Buscar por nombre, maraca o producto..." autocomplete="off">
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section container">
+            <div class="section-header">
+                <h2 id="current-category-title">Todos los Productos</h2>
+                <div class="results-count" id="results-count">Mostrando 0 productos</div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Productos generados por JS -->
+            </div>
+
+            <div class="load-more-container" id="load-more-container">
+                <button class="btn-load-more" id="btn-load-more">Cargar más productos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OndaStore. Todos los derechos reservados.</p>
+            <p>Las compras se realizan de forma segura en la plataforma de Mercado Libre.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
